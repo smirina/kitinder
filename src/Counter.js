@@ -13,6 +13,16 @@ class Counter extends Component {
     console.log(this.props);
     this.setState(prevState => ({ counter: prevState.counter + this.state.incrementTo }));
     this.props.onChange(this.state.counter);
+
+    const addFive = function(yourNumber) {
+      const result = yourNumber + 5;
+      console.log(result);
+    }
+
+    addFive(1);
+    addFive(365);
+    addFive(0.218);
+
   };
 
   reduce = () => {
